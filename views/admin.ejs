@@ -1,0 +1,25 @@
+<%- include("partials/navbar") %>
+<%- include("partials/adminnav") %>
+
+
+<div class="container">
+    <% for(var i=0; i<= contact.length - 1; i++){ %>
+    <div class="container pt-5">
+        <div class="alert alert-info " role="alert">
+            <p>
+                <a href="mailto:<%=contact[i].Mail%>" class="text-dark" style="text-decoration: none;"> <h5 ><%= contact[i].Name%></h5> [<%=contact[i].Mail%>] </a>
+                <a href="tel:<%=contact[i].Phno%>" class="text-dark" style="text-decoration: none;"> <h5 ><%= contact[i].Phno%></h5>  </a>
+            </p>
+            <p><%=contact[i].Mess%></p>
+            <form action="/dltContact" method="post" style="display: inline-block;">
+                <button type="submit" name="Cdlt" value="<%= contact[i]._id %>" style="border:0px; background-color: white;"><i class="fa fa-trash p-2" style="font-size:30px; color:rgb(240, 85, 85)"></i></button>
+            </form>
+          </div>
+    </div>
+<% }%>
+</div>
+<div class="container">
+    <h5><a href="/logout" class="btn btn-danger px-5 mx-5">logout</a></h5>
+</div>
+
+<%- include("partials/footer") %>

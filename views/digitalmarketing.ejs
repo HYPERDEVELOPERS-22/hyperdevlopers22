@@ -1,0 +1,83 @@
+<%- include("partials/navbar") %>
+
+ <div class="container pt-3" >
+  <div class="container pt-4">
+    <div class="container">
+      <h1>Digital Marketing Internship | HyperDevelopers</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container p-2 m-3">
+            <p>Are you Searching for Digital marketing internship for free <br>
+              Now Hyper Developers are providing the Free 3 months internship with Certificate. <br>
+              Now earn while doing the internship. <br> <br>
+              interested in doing the Digital marketing internship fill the below form and apply <br><br> <br>
+              Thanks and Regards <br>
+              <strong>Team HyperDevelopers</strong><br>
+              <a href="www.hyperdevelopers.in">www.hyperdevelopers.in</a> <br>
+             <a href="mailto:contact.hyperdevelopers@gmail.com"> contact.hyperdevelopers@gmail.com</a> <br>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 p-5 bg-info rounded-pill" style="height: fit-content;">
+          <div class="container">
+            <div class="container ">
+              <h3>Perks You Get</h3>
+          <ul>
+            <li>Internship Certificate (after completion)</li>
+            <li>Earn Based on Work</li>
+          </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-2 pb-2 ">
+      <h2>Apply for Digital Marketing Internship</h2>
+      <form action="/digitalmarketing" method="POST">
+        <div class="input-group m-3 p-3">
+          <span class="input-group-text" id="basic-addon1">full name</span>
+          <input type="text" class="form-control" placeholder="full name" name="fullname" aria-describedby="basic-addon1" required>
+        </div>
+        
+        <div class="input-group m-3 p-3">
+          <span class="input-group-text" id="basic-addon2">mail Id</span>
+          <input type="text" class="form-control" placeholder="example@gmail.com" name="mailid" aria-describedby="basic-addon2" required>
+        </div>
+        <div class="input-group m-3 p-3">
+          <span class="input-group-text" id="basic-addon2">Phone No</span>
+          <input type="text" class="form-control" placeholder="including Country Code" name="phno" aria-describedby="basic-addon2" required>
+        </div>
+
+        <div class="input-group m-3 p-3">
+          <span class="input-group-text" id="basic-addon2">Occupation</span>
+          <input type="text" class="form-control" placeholder="student/working professional/ any other"  name="occupation" aria-describedby="basic-addon2" required>
+        </div>
+
+        <div class="input-group m-3 p-3">
+          <span class="input-group-text" id="basic-addon2">How you know about internship</span>
+          <div class="dropdown">
+            <select class="form-control" name="howAbout"  aria-label="Default select example"  required>
+              <option selected>Open this select menu</option>
+              <option value = "friends" >friends</option>
+              <option value = "relatieves">relatives</option>
+              <option value = "parents">parents</option>
+              <option value = "socialmedia">Social Media</option>
+              <option value = "others">Others</option>
+            </select>
+            
+          </div>  
+        </div>
+
+        <div class="input-group m-3 p-3">
+          <span class="input-group-text" id="basic-addon2">Refered By</span>
+          <input type="text" class="form-control" placeholder="Referal Code" name="referalCode" aria-describedby="basic-addon2" required>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" style="width: 100%;">Apply Internship</button>
+        </div>
+      </form>
+    </div>
+  </div>
+ </div>
+
+<%- include("partials/footer") %>

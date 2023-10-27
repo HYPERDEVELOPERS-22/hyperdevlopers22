@@ -1,0 +1,33 @@
+<%- include("partials/navbar") %>
+<%- include("partials/adminnav") %>
+<h4> Interns Details</h4>
+<table class="table table-striped">
+
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Mail id</th>
+            <th scope="col">PHNO</th>
+            <th scope="col">Occupation</th>
+            <th scope="col">Came know By</th>
+            <th scope="col">Refaral Number</th>
+          </tr>
+        </thead>
+        <tbody>
+         <% for (let i = 0; i<= interndetails.length - 1; i++){ %>
+            <tr>
+                <th scope="row"><%= i+1 %></th>
+                <td> <%= interndetails[i].fullname %></td>
+                <td><a href="mailto:<%= interndetails[i].mailid %>"><%= interndetails[i].mailid %></a></td>
+                <td><a href="tel:<%= interndetails[i].phno %>"><%= interndetails[i].phno %></a></td>
+                <td><%= interndetails[i].occupation %></td>
+                <td><%= interndetails[i].howAbout %> </td>
+                <td><%= interndetails[i].referalCode %></td>
+              </tr>
+         <% } %> 
+          
+        </tbody>
+  </table>
+
+<%- include("partials/footer") %>

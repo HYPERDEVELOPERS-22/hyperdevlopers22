@@ -1,0 +1,51 @@
+<%- include("partials/navbar") %>
+
+<div class="container pt-3" >
+    <div class="container pt-4">
+      <div class="container pt-2 pb-2 ">
+        <h2>Submit Lead Details</h2>
+        <form action="/lead" method="POST">
+          <div class="input-group pt-3">
+            <!-- <span class="input-group-text" id="basic-addon1">Business Name</span> -->
+            <input type="text" class="form-control" placeholder="Business Name (company name)" name="businessName" aria-describedby="basic-addon1" required>
+          </div>
+          
+          <div class="input-group pt-3">
+            <!-- <span class="input-group-text" id="basic-addon2">Contact Name</span> -->
+            <input type="text" class="form-control" placeholder="name of the person" name="personName" aria-describedby="basic-addon2" required>
+          </div>
+          <div class="input-group pt-3">
+            <!-- <span class="input-group-text" id="basic-addon2">Phone No to contact</span> -->
+            <input type="text" class="form-control" placeholder="Phone no to contact" name="phno" aria-describedby="basic-addon2" required>
+          </div>
+          <div class="input-group pt-3">
+            <!-- <span class="input-group-text" id="basic-addon2">Mail Id to contact</span> -->
+            <input type="mail" class="form-control" placeholder="example@gmai.com" name="mailid" aria-describedby="basic-addon2" required>
+          </div>
+  
+          <div class="input-group pt-3">
+            <!-- <span class="input-group-text" id="basic-addon2">Purpose of the website</span> -->
+            <input type="text" class="form-control" placeholder="for What they will use the website"  name="use" aria-describedby="basic-addon2" required>
+          </div>
+  
+          
+          <div class="input-group pt-3">
+            <!-- <span class="input-group-text" id="basic-addon2">Additional Details </span> -->
+            <input type="text" class="form-control" placeholder="Additional Details about the project or about the person"  name="addDetails" aria-describedby="basic-addon2" required>
+          </div>
+  
+          
+  
+          <div class="input-group pt-3">
+            <!-- <span class="input-group-text" id="basic-addon2">Refered By</span> -->
+            <input type="text" class="form-control" placeholder="your Referal Code" name="referalCode" aria-describedby="basic-addon2" required>
+          </div>
+          <div class="col-12 pt-3">
+            <button class="btn btn-primary" type="submit" style="width: 100%;">submit lead</button>
+          </div>
+        </form>
+      </div>
+    </div>
+   </div>
+
+<%- include("partials/footer") %>
